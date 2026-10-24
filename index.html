@@ -419,11 +419,11 @@
         <div class="p-3.5 bg-amber-500/10 border border-amber-500/20 rounded-2xl text-[11px] text-amber-300">
           <strong>Academic Expected Value Formula:</strong>
           <div class="font-mono-code mt-1 text-[10px] text-amber-200">
-            E(X) = (P(Win) &times; ₹2,990) - (P(Loss) &times; ₹30)<br>
-            E(X) = (0.0001 &times; 2990) - (0.9999 &times; 10) &asymp; -₹9.70
+            E(X) = (P(Win) &times; ₹2,970) - (P(Loss) &times; ₹30)<br>
+            E(X) = (0.0001 &times; 2970) - (0.9999 &times; 30) &asymp; -₹29.70
           </div>
           <div class="mt-1.5 text-[10px] text-slate-400">
-            For every ₹10 ticket purchased, a player loses an average of ₹9.70 in the long run.
+            For every ₹30 ticket purchased, a player loses an average of ₹29.70 in the long run.
           </div>
         </div>
       </div>
@@ -450,7 +450,7 @@
   <script>
     // Target Winning Combination
     const TARGET_JACKPOT = [4, 8, 2, 9];
-    const TICKET_PRICE = 10;
+    const TICKET_PRICE = 30;
     const JACKPOT_PRIZE = 3000;
 
     // Session State
@@ -725,7 +725,7 @@
           </div>
           <div class="text-right">
             <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold ${item.won ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-slate-800 text-slate-400'}">
-              ${item.won ? '+₹3,000 WIN' : '-₹10 (Loss)'}
+              ${item.won ? '+₹3,000 WIN' : '-₹30 (Loss)'}
             </span>
           </div>
         </div>
